@@ -15,6 +15,8 @@ if [ "$INSTALL" = true ]; then
 		echo ".vimrc 파일이 존재합니다. ~/.vimrc.old로 백업합니다."
 		mv ~/.vimrc ~/.vimrc.old && echo "백업이 완료되었습니다."
 	fi
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	curl -s -o ~/.vimrc https://raw.githubusercontent.com/Junsang-Mun/dotfiles/main/.vimrc
 	vim -c 'PlugInstall' \
 		-c 'qa!'
