@@ -30,7 +30,13 @@
 
 1. `.vimrc` 파일을 루트 디렉토리(~)에 복사하세요.
 2. [vim-plug](https://github.com/junegunn/vim-plug) 레포를 참조해 vim-plug를 설치하세요.
-4. `vim`에서 `:PlugInstall` 명령어로 모든 플러그인을 설치하세요.
+3. `vim`에서 `:PlugInstall` 명령어로 모든 플러그인을 설치하세요.
+
+만약 그마저도 귀찮다면...
+
+`bash <(curl -s https://raw.githubusercontent.com/Junsang-Mun/dotfiles/main/installVimrc.sh)`
+
+를 터미널에 그대로 복사해서 붙여넣으세요.
 
 ### Keymappings
 현재 .vimrc 파일의 키매핑은 다음과 같습니다.<sup>업데이트: 2022. 12. 03</sup>
