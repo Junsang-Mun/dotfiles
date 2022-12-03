@@ -30,6 +30,19 @@
 
 1. `.vimrc` 파일을 루트 디렉토리(~)에 복사하세요.
 2. [vim-plug](https://github.com/junegunn/vim-plug) 레포를 참조해 vim-plug를 설치하세요.
-3. [onedark](https://github.com/joshdick/onedark.vim) 레포를 참고해 onedark를 설치하세요.
 4. `vim`에서 `:PlugInstall` 명령어로 모든 플러그인을 설치하세요.
-5. [Coc.nvim](https://github.com/neoclide/coc.nvim) 레포를 참고해 본인의 작업 환경에 맞게 자동완성 설정을 마치세요.
+
+### Keymappings
+현재 .vimrc 파일의 키매핑은 다음과 같습니다.<sup>업데이트: 2022. 12. 03</sup>
+- Leader key: `,` (comma)
+- Normal Mode:
+  - `,` + `q` : 종료하기 (q)
+  - `,` + `Q` : 모두 종료하기 (qa)
+  - `,` + `s` : 저장하기 (w)
+  - `,` + `S` : 저장하고 나가기 (wq)
+  - `,` + `v` : 세로 분할 화면 열기 (vs)
+- Insert Mode:
+  - `Ctrl` + `s` : 저장하기 (w)
+  - `Ctrl` + `v` : 붙여넣기 (C-r *)
+  - `Ctrl` + `z` : Undo (u)
+  - `Ctrl` + `r` : Redo (C-r)
