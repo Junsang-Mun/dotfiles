@@ -4,7 +4,7 @@ if test -f "$RCFILE";then
 	echo ".vimrc 파일이 존재합니다. 백업할까요?"
 	read -p "[Y/n] : " response
 	case $response in
-		[Nn]* ) rm ~/.vimrc; break;;
+		[Nn]* ) rm ~/.vimrc;
 		* ) mv ~/.vimrc ~/.vimrc.old && echo "백업이 완료되었습니다. ~/.vimrc.old 파일을 확인하세요.";;
 	esac
 fi
