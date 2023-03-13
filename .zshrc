@@ -48,3 +48,18 @@ alias whereami=pwd
 # let my zsh case insensetive
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# git short commands
+alias gs='git status'
+alias gss='git status --short'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph --decorate'
+
+# go one directory up
+alias ..='cd ..'
+
+# language settings
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
