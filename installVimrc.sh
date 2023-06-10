@@ -26,7 +26,7 @@ if [ "$INSTALL" = true ]; then
 		export N_PREFIX=$(pwd)
 		curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n | bash -s lts
 		echo "# bin folder for node.js">>~/.zshrc
-		echo 'export PATH="$PATH:$(pwd)/bin"'
+		echo 'export PATH="$PATH:$HOME/bin"' >> ~/.zshrc
 	fi
 		vim -c 'PlugInstall' \
 		-c 'CocInstall coc-clangd coc-json' \
