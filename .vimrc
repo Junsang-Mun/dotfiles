@@ -21,6 +21,7 @@ Plug 'vim-airline/vim-airline-themes'   " Theme for vim-airline
 Plug 'scrooloose/nerdtree'              " NerdTree
 Plug 'airblade/vim-gitgutter'           " Git changelog tracker
 Plug 'sainnhe/everforest'               " everforest theme
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  "Autocomplete extension
 call plug#end()
 
 " ========== Plug-In Settings ========== "
