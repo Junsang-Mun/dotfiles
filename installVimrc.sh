@@ -18,7 +18,18 @@ if [ "$INSTALL" = true ]; then
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	curl -s -o ~/.vimrc https://raw.githubusercontent.com/Junsang-Mun/dotfiles/main/.vimrc
-	vim -c 'PlugInstall' \
+	if ! command -v node &>/dev/null
+	then
+		echo "CoC(자동완성) 플러그인에 필요한 Node.js를 설치합니다."
+		mkdir -p ~/bin
+		cd
+		export N_PREFIX=$(pwd)
+		curl -fsSL https://raw.githubusercontent.com/tj/n/master/bin/n | bash -s lts
+		echo "# bin folder for node.js">>~/.zshrc
+		echo 'export PATH="$PATH:$(pwd)/bin"'
+	fi
+		vim -c 'PlugInstall' \
+		-c 'CocInstall coc-clangd coc-json' \
 		-c 'qa!'
 	echo '설치가 완료되었습니다.'
 	exit;
