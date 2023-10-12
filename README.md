@@ -2,6 +2,13 @@
 
 우선 본 레포를 적당한 위치에 복사합니다. 이후 각 파일별 지시를 따라주세요.
 
+## node와  npm, npx
+
+`bash <(curl -s https://raw.githubusercontent.com/Junsang-Mun/dotfiles/main/installNode.sh)`
+
+를 터미널에 그대로 복사해서 붙여넣으세요.
+
+
 ## zshrc
 
 1. `.zshrc` 파일을 루트 디렉토리(~)에 복사하세요.
