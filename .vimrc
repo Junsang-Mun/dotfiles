@@ -12,6 +12,9 @@ set hlsearch                            " highlight search result
 set noswapfile                          " do not use swapfile
 set showmatch                           " highlight to match parentheses
 set ignorecase                          " ignore case
+set ts=4
+set sw=4
+set tw=80
 
 " ========== Plug-Ins ========== "
 call plug#begin()
@@ -21,7 +24,6 @@ Plug 'vim-airline/vim-airline-themes'   " Theme for vim-airline
 Plug 'scrooloose/nerdtree'              " NerdTree
 Plug 'airblade/vim-gitgutter'           " Git changelog tracker
 Plug 'sainnhe/everforest'               " everforest theme
-Plug 'neoclide/coc.nvim', {'branch': 'release'}  "Autocomplete extension
 call plug#end()
 
 " ========== Plug-In Settings ========== "
